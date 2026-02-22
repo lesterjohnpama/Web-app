@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
 body {
     /* Background image */
     background: url('background.jpg') no-repeat center center fixed;
@@ -33,4 +41,95 @@ body::before {
     width: 95%;
     max-width: 420px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row.small {
+    justify-content: space-between;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#addBtn {
+    background: #4facfe;
+    color: white;
+}
+
+#addBtn:hover {
+    background: #3a8ee6;
+}
+
+.ghost {
+    background: transparent;
+    border: 1px solid #aaa;
+}
+
+.danger {
+    background: #ff4d4d;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list li.done span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.deleteBtn {
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
 }
